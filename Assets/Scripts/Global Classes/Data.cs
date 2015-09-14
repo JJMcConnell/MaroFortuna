@@ -173,7 +173,7 @@ public class Data : MonoBehaviour {
 
 		m = new Mission ("Bucket Brigade", "As your ship nears the island, a pillar of black smoke begins billowing into the sky. Looking with your spyglass, you see that a large building has caught fire in a village near the beach. Panicked citizens can be seen running to an fro, athough a few villagers are carrying buckets of water from the sea in an attempt to douse the flames. Send some of your crew to help put out the fire, or at least help the villagers think of a way to keep it from spreading.",
 						 "Your crew works swiftly and efficiently. They help the villagers to quickly douse the blaze before it can spread. Grateful for your assistance, the villagers offer you the bounty from their recent harvest. Your holds are now laden with delicious fruit!",
-						 "Unfortunately, the fire quickly turns into a raging inferno. Despite the best efforts of your crew, the village is consumed by the blaze. The villagers thank you for your assistance, and weep at the thought of their lost possessions. You leave them to mourn and to being rebuilding.",
+						 "Unfortunately, the fire quickly turns into a raging inferno. Despite the best efforts of your crew, the village is consumed by the blaze. The villagers thank you for your assistance, and weep at the thought of their lost possessions. You leave them to mourn and to begin rebuilding.",
 						 2, "Military", "Science", "Espionage", "Diplomacy", 60, 2, "Military", m8, "None", false, false);
 
 		missionList.Add (m);				 						 				 						 		
@@ -210,7 +210,7 @@ public class Data : MonoBehaviour {
 		missionList.Add (m);
 		m = new Mission("No! Not the Trees!", "It might just be a trick of the light, but it looks like the trees on that island are moving! They appear to be advancing towards a city. Maybe we could learn something by studying their biology.",
 						 "The figures turned out to indeed be a race of sentient trees. This planet is truly alien. Their technology was surprisingly advanced, and they shared some schematics with the crew. You could learn much from them.",
-						 "The figures were an army of warriors disguised as trees! They attacked our group and drove us back to the ship. Apparently, they were attempting to sack the city while it was unawares.",
+						 "The figures were an army of warriors disguised as trees! They attacked our group and drove us back to the ship. Apparently, they were attempting to sack the city while it was unaware.",
 						 2, "Science", "Military", "Diplomacy", "Espionage", 40, 3, "Science", s5, "None", false, false);
 
 		missionList.Add (m);
