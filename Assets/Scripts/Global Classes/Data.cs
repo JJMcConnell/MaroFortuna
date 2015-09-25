@@ -22,6 +22,7 @@ public class Data : MonoBehaviour {
 	public static bool needCharacter;
 	public static int adjustedDifficulty;
 	public static bool hitBack;
+    public static int currentDifficulty;
 
 
 	void Awake(){
