@@ -22,7 +22,7 @@ public class TriggeredEvent : MonoBehaviour {
 			Data.militaryResCount +=100;
 		}
 
-		if ((Data.dayCounter % 2 == 0 && Data.dayCounter != 0) && Data.charList.Count > 0) {
+		if ((Data.dayCounter % 2 == 0 && Data.dayCounter != 0) && Data.charList.Count > 0 && Data.hitBack == false) {
 			newCharacter = true;
 			if (Data.charList.Count > 0) {
 				rewardChar = Data.charList [0];

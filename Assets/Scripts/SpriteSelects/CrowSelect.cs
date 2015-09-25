@@ -30,7 +30,7 @@ public class CrowSelect : MonoBehaviour {
 				Data.activeMissionChars.Add (Data.currentChars [i]);
 				Data.currentCrewSize += 1;
 				Data.currentChars [i].setPicked ();
-			}
+            }
 		}
 	}
 }
