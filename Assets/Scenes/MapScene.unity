@@ -264,7 +264,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ab3d3a4934507f48bf2d7f913ff57a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doWindow0: 0
 --- !u!58 &339266387
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -382,7 +381,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ccba9783a634ce439b2ece6b865ada3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doWindow0: 0
 --- !u!58 &570728116
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -919,7 +917,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 534b9c5f2a3105840af91b510245650a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doWindow0: 0
 --- !u!58 &870282466
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1109,7 +1106,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a52833043e0a82b4e9499f429ac6e4ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doWindow0: 0
 --- !u!58 &909556570
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1258,8 +1254,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 481699012}
   - 212: {fileID: 1039631121}
-  - 114: {fileID: 1039631119}
   - 58: {fileID: 1039631120}
+  - 114: {fileID: 1039631119}
   m_Layer: 0
   m_Name: Ocean Map Island4
   m_TagString: Untagged
@@ -1275,10 +1271,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1039631118}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a52833043e0a82b4e9499f429ac6e4ae, type: 3}
+  m_Script: {fileID: 11500000, guid: 9b10ddd804c11aa4ea5cbfdc14b400e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doWindow0: 0
 --- !u!58 &1039631120
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2639,10 +2634,10 @@ Rigidbody2D:
   m_GameObject: {fileID: 2143160930}
   m_Mass: 1
   m_LinearDrag: 0
-  m_AngularDrag: .0500000007
+  m_AngularDrag: .5
   m_GravityScale: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
