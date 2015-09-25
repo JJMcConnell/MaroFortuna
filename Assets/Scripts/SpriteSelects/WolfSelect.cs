@@ -31,6 +31,13 @@ public class WolfSelect : MonoBehaviour {
 				Data.currentCrewSize += 1;
 				Data.currentChars [i].setPicked ();
 			}
-		}
+            else if (Data.currentChars[i].isPicked)
+            {
+                GameObject.Find("Artemis the Wolf").GetComponent<SpriteRenderer>().color = Color.white;
+                Data.activeMissionChars.Remove(Data.currentChars[i]);
+                Data.currentCrewSize -= 1;
+                Data.currentChars[i].setPicked();
+            }
+        }
 	}
 }

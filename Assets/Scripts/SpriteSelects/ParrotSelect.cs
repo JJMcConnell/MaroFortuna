@@ -31,6 +31,14 @@ public class ParrotSelect : MonoBehaviour {
 				Data.currentCrewSize += 1;
 				Data.currentChars [i].setPicked ();
 			}
-		}
+            else if (Data.currentChars[i].isPicked)
+            {
+                GameObject.Find("Pierre the Parrot").GetComponent<SpriteRenderer>().color = Color.white;
+                Data.activeMissionChars.Remove(Data.currentChars[i]);
+                Data.currentCrewSize -= 1;
+                Data.currentChars[i].setPicked();
+            }
+
+        }
 	}
 }

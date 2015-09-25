@@ -32,6 +32,13 @@ public class ElkSelect : MonoBehaviour {
 				Data.currentCrewSize += 1;
 				Data.currentChars [i].setPicked ();
 			}
-		}
+            else if (Data.currentChars[i].isPicked)
+            {
+                GameObject.Find("Eisenhower the Elk").GetComponent<SpriteRenderer>().color = Color.white;
+                Data.activeMissionChars.Remove(Data.currentChars[i]);
+                Data.currentCrewSize -= 1;
+                Data.currentChars[i].setPicked();
+            }
+        }
 	}
 }

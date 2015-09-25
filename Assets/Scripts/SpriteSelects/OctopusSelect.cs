@@ -31,6 +31,13 @@ public class OctopusSelect : MonoBehaviour {
 				Data.currentCrewSize += 1;
 				Data.currentChars [i].setPicked ();
 			}
-		}
+            else if (Data.currentChars[i].isPicked)
+            {
+                GameObject.Find("Octavia the Octopus").GetComponent<SpriteRenderer>().color = Color.white;
+                Data.activeMissionChars.Remove(Data.currentChars[i]);
+                Data.currentCrewSize -= 1;
+                Data.currentChars[i].setPicked();
+            }
+        }
 	}
 }
