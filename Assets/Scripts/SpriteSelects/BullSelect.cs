@@ -31,7 +31,7 @@ public class BullSelect : MonoBehaviour {
 				Data.activeMissionChars.Add (Data.currentChars [i]);
 				Data.currentCrewSize += 1;
 				Data.currentChars [i].setPicked ();
-			}
+            }
 		}
 	}
 }
