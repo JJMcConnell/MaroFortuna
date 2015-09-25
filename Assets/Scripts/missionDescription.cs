@@ -11,11 +11,14 @@ public class missionDescription : MonoBehaviour {
 		Text guiText = GameObject.Find("Description").GetComponent<Text>();
 		guiText.text = Data.pickedMission.title + "\n" + missionDesc;
 
+
+
+        /*
 		//at end of displaying messages clear isListed properties for missions 
 		foreach(Mission m in Data.missionList){
 			m.isListed = false;
 		}
-
+        */
 
 
 

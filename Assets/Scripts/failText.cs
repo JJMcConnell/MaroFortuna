@@ -33,12 +33,6 @@ public class failText : MonoBehaviour {
 		Data.activeMissionChars.Clear ();
 		Data.currentCrewSize = 0;
 		
-		//mark mission as done
-		foreach(Mission m in Data.missionList){
-			if(m.title == Data.pickedMission.title)
-				m.isDone = true;
-		}
-		
 		//update day counter
 		Data.dayCounter++;
 	}

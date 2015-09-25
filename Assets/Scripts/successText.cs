@@ -11,7 +11,7 @@ public class successText : MonoBehaviour {
 		string success = Data.pickedMission.successDesc;
 		Mission activeMission = Data.pickedMission;
 		Text guiText1 = GameObject.Find("SuccessText").GetComponent<Text>();
-
+        int type = 0;
 		//guiText1.text = "Success \n" + success + "\n\nRewards: \n" + Data.pickedMission.rewardRsc.rscName;
 		
 			Resource reward = Data.pickedMission.rewardRsc;
@@ -28,18 +28,22 @@ public class successText : MonoBehaviour {
 			guiText5.text = "";
 			guiText6.text = "";
 			if(Data.pickedMission.rewardRsc.type == "Military"){
+            type = 1;
 				guiText3.text = "+" + (Data.pickedMission.rewardRsc.quantity +(Data.adjustedDifficulty - 1)*50) + " Military Resources";
 				Data.militaryResCount += Data.pickedMission.rewardRsc.quantity + (Data.adjustedDifficulty - 1)*50;
 			}
 			if(Data.pickedMission.rewardRsc.type == "Science"){
+            type = 2;
 				guiText4.text = "+" + (Data.pickedMission.rewardRsc.quantity +(Data.adjustedDifficulty - 1)*50) + " Science Resources";
 				Data.scienceResCount += Data.pickedMission.rewardRsc.quantity + (Data.adjustedDifficulty - 1)*50;
 			}
 			if(Data.pickedMission.rewardRsc.type == "Espionage"){
+            type = 3;
 				guiText5.text = "+" + (Data.pickedMission.rewardRsc.quantity +(Data.adjustedDifficulty - 1)*50) + " Espionage Resources";
 				Data.espionageResCount += Data.pickedMission.rewardRsc.quantity + (Data.adjustedDifficulty - 1)*50;
 			}
 			if(Data.pickedMission.rewardRsc.type == "Diplomacy"){
+            type = 4;
 				guiText6.text = "+" + (Data.pickedMission.rewardRsc.quantity +(Data.adjustedDifficulty - 1)*50) + " Diplomacy Resources";
 				Data.diplomacyResCount += Data.pickedMission.rewardRsc.quantity + (Data.adjustedDifficulty - 1)*50;
 			}
@@ -76,11 +80,40 @@ public class successText : MonoBehaviour {
 			Data.activeMissionChars.Clear ();
 			Data.currentCrewSize = 0;
 
-			//mark mission as done
-			foreach (Mission m in Data.missionList) {
-				if (m.title == Data.pickedMission.title)
-					m.isDone = true;
-			}
+        //mark mission as done
+        switch (type)
+        {
+            case 0:
+                break;
+            case 1:
+                foreach (Mission m in Data.militaryList)
+                {
+                    if (m.title == Data.pickedMission.title)
+                        m.isDone = true;
+                }
+                break;
+            case 2:
+                foreach (Mission m in Data.scienceList)
+                {
+                    if (m.title == Data.pickedMission.title)
+                        m.isDone = true;
+                }
+                break;
+            case 3:
+                foreach (Mission m in Data.espionageList)
+                {
+                    if (m.title == Data.pickedMission.title)
+                        m.isDone = true;
+                }
+                break;
+            case 4:
+                foreach (Mission m in Data.diplomacyList)
+                {
+                    if (m.title == Data.pickedMission.title)
+                        m.isDone = true;
+                }
+                break;
+        }
 
 			//update day counter
 			Data.dayCounter++;
