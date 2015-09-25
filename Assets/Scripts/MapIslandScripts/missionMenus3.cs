@@ -2,7 +2,7 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
-public class missionMenus2 : MonoBehaviour {
+public class missionMenus3 : MonoBehaviour {
 	public bool doWindow0 = false;
 	List<Mission> missionListMenu = new List<Mission> (); 
 
@@ -85,9 +85,10 @@ public class missionMenus2 : MonoBehaviour {
 		
 	}
 	
-	void OnMouseDown (){
-		doWindow0 = true;
-	}
+	void OnCollisionEnter2D (Collision2D coll){
+		//doWindow0 = true;
+        Application.LoadLevel("MainMenu");
+    }
 	
 	
 	void OnGUI() {
