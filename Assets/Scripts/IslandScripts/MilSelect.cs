@@ -7,17 +7,22 @@ public class MilSelect : MonoBehaviour {
 
     public void LoadScene(string level)
     {
-        System.Random r = new System.Random();
-        int randomIndex = r.Next(0, Data.militaryList.Count);
-        Data.pickedMission = Data.militaryList[randomIndex];
-        int count = 0; //to prevent possible infinite loop
 
-        while (Data.pickedMission.difficulty != Data.currentDifficulty || count < 100)
+        System.Collections.Generic.List<Mission> tempList = new System.Collections.Generic.List<Mission>();
+
+        for(int i=0; i<Data.militaryList.Count; i++)
         {
-            randomIndex = r.Next(0, Data.militaryList.Count);
-            Data.pickedMission = Data.militaryList[randomIndex];
-            count++;
+            if (Data.militaryList[i].difficulty == Data.currentDifficulty)
+            {
+                tempList.Add(Data.militaryList[i]);
+            }
         }
+
+        System.Random r = new System.Random();
+        int randomIndex = r.Next(0, tempList.Count);
+        Debug.Log("Random mission: " + randomIndex);
+        Data.pickedMission = tempList[randomIndex];
+        tempList.Clear();
 
         //loadingImage.SetActive(true);
         Application.LoadLevel(level);

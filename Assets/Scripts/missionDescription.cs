@@ -35,6 +35,8 @@ public class missionDescription : MonoBehaviour {
 		string remaining = "";
 		Text guiText = GameObject.Find("Remaining").GetComponent<Text>();
 		guiText.text = "Characters Needed:\n               " + (Data.pickedMission.squadSize - Data.currentCrewSize);
-	
-	}
+        if((Data.pickedMission.squadSize - Data.currentCrewSize) == 0)
+            guiText.color = Color.white;
+
+    }
 }

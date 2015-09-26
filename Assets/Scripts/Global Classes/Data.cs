@@ -132,7 +132,7 @@ public class Data : MonoBehaviour {
 
 		/* public Mission(string title, string description, string successDesc, string failDesc, int squadSize,
 	               string majorAd, string minorAd, string majorDis, string minorDis, int successChance,
-	               int difficulty, string type, Resource rewardRsc, string rewardChar, bool isListed, bool isDone */
+	               int difficulty, string type, Resource rewardRsc, string rewardChar, bool isListed, bool isDone) */
 
 //Military missions
 

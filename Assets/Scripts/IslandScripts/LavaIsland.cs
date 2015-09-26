@@ -7,9 +7,9 @@ public class LavaIsland : MonoBehaviour {
 	void Start () {
 
         Data.currentDifficulty = 3;
+        Debug.Log("The current mission difficulty is " + Data.currentDifficulty);
 
-
-	}
+    }
 	
 	// Update is called once per frame
 	void Update () {

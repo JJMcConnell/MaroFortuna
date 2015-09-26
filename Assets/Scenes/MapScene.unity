@@ -244,26 +244,14 @@ GameObject:
   m_Component:
   - 4: {fileID: 1183332296}
   - 212: {fileID: 339266388}
-  - 114: {fileID: 339266386}
   - 58: {fileID: 339266387}
   m_Layer: 0
-  m_Name: Ocean Map Island1
+  m_Name: BeachIsland
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &339266386
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 339266385}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ab3d3a4934507f48bf2d7f913ff57a4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!58 &339266387
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -370,17 +358,6 @@ Transform:
 GameObject:
   m_PrefabParentObject: {fileID: 138498, guid: c805a5fa52d55a74caa222039091f961, type: 2}
   m_PrefabInternal: {fileID: 1772618786}
---- !u!114 &570728115
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 570728114}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ccba9783a634ce439b2ece6b865ada3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!58 &570728116
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -886,7 +863,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 138498, guid: c805a5fa52d55a74caa222039091f961, type: 2}
       propertyPath: m_Name
-      value: Ocean Map Island5
+      value: GreenIsland
       objectReference: {fileID: 0}
     - target: {fileID: 21270170, guid: c805a5fa52d55a74caa222039091f961, type: 2}
       propertyPath: m_Sprite
@@ -906,17 +883,6 @@ Transform:
 GameObject:
   m_PrefabParentObject: {fileID: 138498, guid: c805a5fa52d55a74caa222039091f961, type: 2}
   m_PrefabInternal: {fileID: 870282462}
---- !u!114 &870282465
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 870282464}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 534b9c5f2a3105840af91b510245650a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!58 &870282466
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1075,7 +1041,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 138498, guid: c805a5fa52d55a74caa222039091f961, type: 2}
       propertyPath: m_Name
-      value: Ocean Map Island3
+      value: BeachIsland
       objectReference: {fileID: 0}
     - target: {fileID: 21270170, guid: c805a5fa52d55a74caa222039091f961, type: 2}
       propertyPath: m_Sprite
@@ -1095,17 +1061,6 @@ Prefab:
 GameObject:
   m_PrefabParentObject: {fileID: 138498, guid: c805a5fa52d55a74caa222039091f961, type: 2}
   m_PrefabInternal: {fileID: 909556567}
---- !u!114 &909556569
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 909556568}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a52833043e0a82b4e9499f429ac6e4ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!58 &909556570
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1255,25 +1210,13 @@ GameObject:
   - 4: {fileID: 481699012}
   - 212: {fileID: 1039631121}
   - 58: {fileID: 1039631120}
-  - 114: {fileID: 1039631119}
   m_Layer: 0
-  m_Name: Ocean Map Island4
+  m_Name: LavaIsland
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1039631119
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1039631118}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9b10ddd804c11aa4ea5cbfdc14b400e0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!58 &1039631120
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2112,6 +2055,10 @@ Prefab:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 138498, guid: c805a5fa52d55a74caa222039091f961, type: 2}
+      propertyPath: m_Name
+      value: IceIsland
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 11462834, guid: c805a5fa52d55a74caa222039091f961, type: 2}
     - {fileID: 6110428, guid: c805a5fa52d55a74caa222039091f961, type: 2}
@@ -2545,6 +2492,7 @@ GameObject:
   - 114: {fileID: 2143160934}
   - 61: {fileID: 2143160935}
   - 50: {fileID: 2143160936}
+  - 114: {fileID: 2143160937}
   m_Layer: 5
   m_Name: Boat
   m_TagString: Untagged
@@ -2641,3 +2589,14 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &2143160937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2143160930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b10ddd804c11aa4ea5cbfdc14b400e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
