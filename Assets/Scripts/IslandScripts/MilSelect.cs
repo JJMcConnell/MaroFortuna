@@ -20,7 +20,7 @@ public class MilSelect : MonoBehaviour {
 
         System.Random r = new System.Random();
         int randomIndex = r.Next(0, tempList.Count);
-        Debug.Log("Random mission: " + randomIndex);
+        Debug.Log("Random mission: " + randomIndex + " out of: " +tempList.Count);
         Data.pickedMission = tempList[randomIndex];
         tempList.Clear();
 

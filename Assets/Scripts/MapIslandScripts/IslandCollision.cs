@@ -5,7 +5,8 @@ public class IslandCollision : MonoBehaviour {
 
 
     public void loadIsland(string level) {
-        Application.LoadLevel(level);
+        if(level == "LavaIsland" || level =="GreenIsland" || level == "IceIsland" || level == "BeachIsland")
+            Application.LoadLevel(level);
     }
 
     void OnCollisionEnter2D(Collision2D coll)
